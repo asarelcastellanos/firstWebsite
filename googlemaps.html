@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gm.css">
+  </head>
+  <body>
+    <div id="container">
+      <ul id="menu">
+        <center>
+          <li><a href="home.html">Home</a><li>
+          <li><a href="lightbulb.html">Lightbulb Challenge</a><li>
+          <li><a href="journal.html">Journal</a><li>
+          <li><a href="entrepreneur.html">Entrepreneur</a><li>
+          <li><a href="googlemaps.html">Google Maps</a><li>
+        </ul>
+      </center>
+      <div id="content">
+    <h3>My Google Maps</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 34.057853, lng: -118.286281};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM_dW3VERu8A6jcLEqhHE7uP2CnRp31vM&callback=initMap">
+    </script>
+  </body>
+</html>

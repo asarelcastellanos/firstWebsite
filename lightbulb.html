@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide(1000);
+    });
+    $("#show").click(function(){
+        $("p").show(1000);
+    });
+});
+ </script>
+  <link rel="stylesheet" type="text/css" href="ls.css">
+</head>
+<body>
+  <div id="container">
+    <ul id="menu">
+      <center>
+        <li><a href="home.html">Home</a><li>
+        <li><a href="lightbulb.html">Lightbulb Challenge</a><li>
+        <li><a href="journal.html">Journal</a><li>
+        <li><a href="entrepreneur.html">Entrepreneur</a><li>
+        <li><a href="googlemaps.html">Google Maps</a><li>
+      </ul>
+    </center>
+    <div id="content">
+        <center>
+        <h1>Click on the lightbulb to turn on.</h1>
+      </center>
+      </div>
+      <div id="picture">
+        <center> <img id="myImage" onclick="changeImage(this)" src="bulboff.gif"
+         width="120" height="180"> </center>
+        <center><img id="patronus" onmouseover="showImage()" onmouseout="hideImage()" src="patronus.png"
+         width="300" height="180"></center>
+         <center><img id="wizard" onmouseover="showImage()" onmouseout="hideImage()" src="wizard.png"
+         width="300" height="180"></center>
+         <center><img id="patronus2" onmouseover="showImage()" onmouseout="hideImage()" src="patronus2.png"
+         width="300" height="180"></center>
+          <center><img id="wand" onmouseover="showImage()" onmouseout="hideImage()" src="wand.png"
+           width="300" height="180"><center>
+        <script>
+          function changeImage() {
+            var image = document.getElementById('myImage') ;
+            if (image.src.match("bulbon")) {
+              image.src = "bulboff.gif" ;
+            } else {
+              image.src = "bulbon.gif"
+            }
+          }
+        </script>
+        <script>
+                document.getElementById("myImage").onmouseover = function() {
+                document.getElementById("wizard").style.visibility = "visible";
+                document.getElementById("wand").style.visibility = "visible";
+                document.getElementById("patronus").style.visibility = "visible";
+                document.getElementById("patronus2").style.visibility = "visible";
+              };
+              document.getElementById("myImage").onmouseout = function() {
+              document.getElementById("wizard").style.visibility = "hidden"
+              document.getElementById("wand").style.visibility = "hidden";
+              document.getElementById("patronus").style.visibility = "hidden";
+              document.getElementById("patronus2").style.visibility = "hidden";
+            };
+        </script>
+        <center>
+          <button id="hide">Click on me to hide the sentence!</button>
+          <button id="show">Click on me to show the sentence!</button>
+        <p id="camp" align="center">One thing I liked about camp was getting to know my brothers through fun games.</p></center>
+      </div>
+    </div>
+        <div id="footer">
+          <center>
+            2017-2018 Asarel Castellanos
+        </div>
+      </center>
+  </div>
+</html>
