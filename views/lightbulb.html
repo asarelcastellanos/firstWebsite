@@ -12,17 +12,17 @@
     });
 });
  </script>
-  <link rel="stylesheet" type="text/css" href="ls.css">
+  <link rel="stylesheet" type="text/css" href="../css/ls.css">
 </head>
 <body>
   <div id="container">
     <ul id="menu">
       <center>
-        <li><a href="home.html">Home</a><li>
-        <li><a href="lightbulb.html">Lightbulb Challenge</a><li>
-        <li><a href="journal.html">Journal</a><li>
-        <li><a href="entrepreneur.html">Entrepreneur</a><li>
-        <li><a href="googlemaps.html">Google Maps</a><li>
+        <li><a href="../home.html">Home</a><li>
+        <li><a href="./lightbulb.html">Lightbulb Challenge</a><li>
+        <li><a href="./journal.html">Journal</a><li>
+        <li><a href="./entrepreneur.html">Entrepreneur</a><li>
+        <li><a href="./googlemaps.html">Google Maps</a><li>
       </ul>
     </center>
     <div id="content">
@@ -31,23 +31,23 @@
       </center>
       </div>
       <div id="picture">
-        <center> <img id="myImage" onclick="changeImage(this)" src="bulboff.gif"
+        <center> <img id="myImage" onclick="changeImage(this)" src="../assets/bulboff.gif"
          width="120" height="180"> </center>
-        <center><img id="patronus" onmouseover="showImage()" onmouseout="hideImage()" src="patronus.png"
+        <center><img id="patronus" onmouseover="showImage()" onmouseout="hideImage()" src="../assets/patronus.png"
          width="300" height="180"></center>
-         <center><img id="wizard" onmouseover="showImage()" onmouseout="hideImage()" src="wizard.png"
+         <center><img id="wizard" onmouseover="showImage()" onmouseout="hideImage()" src="../assets/wizard.png"
          width="300" height="180"></center>
-         <center><img id="patronus2" onmouseover="showImage()" onmouseout="hideImage()" src="patronus2.png"
+         <center><img id="patronus2" onmouseover="showImage()" onmouseout="hideImage()" src="../assets/patronus2.png"
          width="300" height="180"></center>
-          <center><img id="wand" onmouseover="showImage()" onmouseout="hideImage()" src="wand.png"
+          <center><img id="wand" onmouseover="showImage()" onmouseout="hideImage()" src="../assets/wand.png"
            width="300" height="180"><center>
         <script>
           function changeImage() {
             var image = document.getElementById('myImage') ;
             if (image.src.match("bulbon")) {
-              image.src = "bulboff.gif" ;
+              image.src = "../assets/bulboff.gif" ;
             } else {
-              image.src = "bulbon.gif"
+              image.src = "../assets/bulbon.gif"
             }
           }
         </script>
